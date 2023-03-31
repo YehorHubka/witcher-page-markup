@@ -17,8 +17,8 @@ function copyText() {
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
 
-    navigator.clipboard.writeText(copyText.value);
-
+    //navigator.clipboard.writeText(copyText.value);
+    document.execCommand('copy')
     showCopyAlert();
 }
 
